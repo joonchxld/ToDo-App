@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+}
+
+li {
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 15px;
+    /* que se alineen horizontalmente y en columnas */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    text-indent: 20px;
+}
+
+p {
+    font-size: 20;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+}
+
+ul {
+    margin: 40px;
+    padding: 40px;
+    background-image: linear-gradient(to bottom right, darkred, black);
+    border-radius: 10px;
+}
+
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  /* background-color: #CCC; */
+}
+
+.Icon-check {
+    position: absolute;
+}
+
+.Icon-check--active {
+    color: green;
+}
+
+.Icon-delete {
+    /* position: absolute; */
+    top: -24px;
+    right: 0;
+}
+
+.Icon-delete:hover {
+    color: red;
+} 
