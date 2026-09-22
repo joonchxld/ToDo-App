@@ -1,18 +1,14 @@
-function CreateTodoBtn() {
+import './CreateTodoBtn.css';
+
+function CreateTodoBtn({ setOpenModal }) {
   return (
-    <button 
-    onClick={(event) => {console.log('Click')
-      console.log(event)
-      console.log(event.target)
-    }}
-    style={{
-      padding: 10,
-      margin: 10,
-      textAlign: "center",
-      background: "black",
-      color: "aliceblue",
-      fontWeight: "bold",
-    }}
+    <button
+      className="CreateTodoBtn"
+      onClick={
+        () => {
+          setOpenModal(state => !state);
+        }
+      }
     >+</button>
   );
 }
